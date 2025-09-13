@@ -1,5 +1,5 @@
-# SPDX-License-Identifier: Apache-2.0
-# Copyright (c) 2025 João Soares
+# SPDX-FileCopyrightText: 2025 João Soares
+# SPDX-License-Identifier: MIT
 
 repos:
   - repo: https://github.com/fsfe/reuse-tool
