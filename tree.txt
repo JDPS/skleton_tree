@@ -1,0 +1,50 @@
+SPDX-FileCopyrightText: 2025 João Soares
+SPDX-License-Identifier: CC-BY-4.0
+
+skleton_tree/
+├── .idea/
+│   ├── copyright/
+│   │   └── InternalUse.xml
+│   ├── inspectionProfiles/
+│   │   ├── profiles_settings.xml
+│   │   └── Project_Default.xml
+│   ├── .gitignore
+│   ├── copilot.data.migration.agent.xml
+│   ├── copilot.data.migration.edit.xml
+│   ├── dbnavigator.xml
+│   ├── misc.xml
+│   ├── modules.xml
+│   ├── ruff.xml
+│   ├── skleton_tree.iml
+│   └── workspace.xml
+├── .venv/
+│   ├── Lib/
+│   │   └── site-packages/
+│   │       ├── __pycache__/
+│   │       │   └── _virtualenv.cpython-312.pyc
+│   │       ├── _virtualenv.pth
+│   │       └── _virtualenv.py
+│   ├── Scripts/
+│   │   ├── activate
+│   │   ├── activate.bat
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── activate.nu
+│   │   ├── activate.ps1
+│   │   ├── activate_this.py
+│   │   ├── deactivate.bat
+│   │   ├── pydoc.bat
+│   │   ├── python.exe
+│   │   └── pythonw.exe
+│   ├── .gitignore
+│   ├── CACHEDIR.TAG
+│   └── pyvenv.cfg
+├── src/
+│   ├── __init__.py
+│   ├── dir_gen.py
+│   ├── src_tree.txt
+│   ├── tree_gen.ps1
+│   └── tree_gen.py
+├── layout.txt
+├── pyproject.toml
+└── skleton_tree_tree.txt

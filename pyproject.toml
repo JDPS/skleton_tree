@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2025 João Soares
+# SPDX-License-Identifier: MIT
+
+[project]
+name = "skleton-tree"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "black>=25.1.0",
+]

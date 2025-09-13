@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: 2025 João Soares
+# SPDX-License-Identifier: CC-BY-4.0
+
+.venv/
+__pycache__/
+*.py[cod]
+.idea/
+.devtools/

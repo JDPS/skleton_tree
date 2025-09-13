@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: skleton_tree
+Upstream-Contact: João Soares <joaosoarex@gmail.com>
+Source: https://github.com/JDPS/skleton_tree
+
+Files: .secrets.baseline
+Copyright: 2025 João Soares
+License: MIT
+
+Files: uv.lock
+Copyright: 2025 João Soares
+License: MIT

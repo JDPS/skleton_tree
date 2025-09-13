@@ -1,0 +1,78 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2025 João Soares
+
+repos:
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v5.1.1
+    hooks:
+      - id: reuse
+        name: reuse-lint
+
+  # Quality
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.13.0
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  # Type-check
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.17.1
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - types-PyYAML
+          - types-requests
+
+  # Security
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: [--baseline, .secrets.baseline]
+
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.8.6
+    hooks:
+      - id: bandit
+        args:
+          - -q
+          - -r
+          - app
+          - ui
+          - -x
+          - tests,tools,.venv,.idea   # comma-separated
+        pass_filenames: false         # <-- critical
+
+  # Sanity
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=10240"]
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+
+  # Local hooks (cross-platform)
+  - repo: local
+    hooks:
+      - id: pytest-changed
+        name: pytest on staged changes (fast)
+        language: python
+        additional_dependencies: [pytest]
+        entry: python tools/pc_pytest.py
+        pass_filenames: false
+
+  # Optional: EXIF stripping via Pillow (portable)
+  - repo: local
+    hooks:
+      - id: strip-exif
+        name: strip-exif (Pillow)
+        language: python
+        additional_dependencies: [Pillow]
+        entry: python tools/strip_exif.py
+        files: '\.(jpe?g|png|tiff?)$'
