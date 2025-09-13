@@ -3,7 +3,7 @@
 
 name: CI
 on:
-  push: { branches: [ master ] }   # or [ main ]
+  push: { branches: [ mmain ] }   # or [ master ]
   pull_request:
 
 jobs:
