@@ -3,10 +3,44 @@
 
 [project]
 name = "skleton-tree"
-version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.12"
+version = "0.2.0"
+description = "Print directory trees and recreate structures from saved layouts"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "João Soares" }
+]
+keywords = ["tree", "directory", "filesystem", "scaffold", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 dependencies = [
     "black>=25.1.0",
+    "build>=1.2.2.post1",
     "pytest>=8.4.2",
+    "setuptools>=68",
+    "twine>=5.1.1",
 ]
+
+[project.scripts]
+
+[project.optional-dependencies]
+dev = [
+    "black>=25.1.0",
+    "pytest>=8.4.2",
+    "build>=1.2.2.post1",
+    "twine>=5.1.1",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

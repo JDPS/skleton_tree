@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2025 João Soares
+# SPDX-License-Identifier: MIT
+
+LICENSE
+LICENSE.docs
+README.md
+pyproject.toml
+src/skleton_tree/__init__.py
+src/skleton_tree/__main__.py
+src/skleton_tree/dir_gen.py
+src/skleton_tree/tree_gen.py
+src/skleton_tree.egg-info/PKG-INFO
+src/skleton_tree.egg-info/SOURCES.txt
+src/skleton_tree.egg-info/dependency_links.txt
+src/skleton_tree.egg-info/requires.txt
+src/skleton_tree.egg-info/top_level.txt
+tests/test_roundtrip.py
+tests/test_tree_build_connectors.py

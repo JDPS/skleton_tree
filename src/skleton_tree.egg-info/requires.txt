@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2025 João Soares
+# SPDX-License-Identifier: MIT
+
+black>=25.1.0
+build>=1.2.2.post1
+pytest>=8.4.2
+setuptools>=68
+twine>=5.1.1
+
+[dev]
+black>=25.1.0
+pytest>=8.4.2
+build>=1.2.2.post1
+twine>=5.1.1

@@ -1,0 +1,4 @@
+# SPDX-FileCopyrightText: 2025 João Soares
+# SPDX-License-Identifier: MIT
+
+skleton_tree

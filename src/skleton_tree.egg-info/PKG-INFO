@@ -1,3 +1,41 @@
+# SPDX-FileCopyrightText: 2025 João Soares
+# SPDX-License-Identifier: MIT
+
+Metadata-Version: 2.4
+Name: skleton-tree
+Version: 0.2.0
+Summary: Print directory trees and recreate structures from saved layouts
+Author: João Soares
+License: MIT License
+        
+        Copyright (c) 2025 João Soares
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Keywords: tree,directory,filesystem,scaffold,cli
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.docs
+Requires-Dist: black>=25.1.0
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: pytest>=8.4.2
+Requires-Dist: setuptools>=68
+Requires-Dist: twine>=5.1.1
+Provides-Extra: dev
+Requires-Dist: black>=25.1.0; extra == "dev"
+Requires-Dist: pytest>=8.4.2; extra == "dev"
+Requires-Dist: build>=1.2.2.post1; extra == "dev"
+Requires-Dist: twine>=5.1.1; extra == "dev"
+Dynamic: license-file
+
 SPDX-FileCopyrightText: 2025 João Soares
 SPDX-License-Identifier: CC-BY-4.0
 
